@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rethink-active</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/vegas.css">
+    <link rel="stylesheet" href="css/wrapper.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rethink-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ce6ef1ac33.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="index-info">
+        <h1>RETHINK</h1>
+        <a class="index-btn" href="rethink-aboutUs.html">進入官網</a>
+    </div>
+
+    <!-- 引用連結 -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/vegas.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+
+    <!-- 首頁vegas特效 -->
+    <script>
+        $("body").vegas({
+            timer: false,
+            shuffle: true,
+            transition: 'blur',
+            delay: 7000,
+            transitionDuration: 7000,
+            // align: 'center',
+
+            slides: [{
+                    src: 'img/index_bg02.jpg'
+                }, {
+                    src: 'img/index_bg01.jpg'
+                }, {
+                    src: 'img/index_bg03.jpg'
+                },
+
+            ],
+            animation: 'random',
+            overlay: 'vegas/overlays/07.png'
+
+        });
+    </script>
+
+</body>
+
+</html>

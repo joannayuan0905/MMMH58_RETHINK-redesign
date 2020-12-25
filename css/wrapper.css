@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif TC', serif;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto; 
+    padding: 0 50px;
+    
+}
+
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+}
+
+h2,h3{
+    font-size: 2rem;
+    margin: 50px 0;
+    background: -webkit-gradient(linear,left top,right top,from(#F29F05),to(#F24405));
+    background: linear-gradient(to right,#F29F05,#F24405);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+h4{
+    margin: 20px;
+    color: #54728C;
+}
+
+
+a,p{
+    font-weight: 500; 
+}
+
+a{
+    text-decoration: none;
+    color: #686868;  
+}
+
+a:hover{
+    text-decoration: none;
+    color: #686868;
+}
+
+p{
+    color: #686868;
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    height: 100px;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/* 回到頂部功能 */
+.toTop-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0.6;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    border-radius: 33%;
+}
+
+.toTop-arrow::before,
+.toTop-arrow::after {
+    width: 18px;
+    height: 5px;
+    border-radius: 3px;
+    background: #686868;
+    position: absolute;
+    content: "";
+}
+
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.5rem;
+}
+
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.5rem;
+}
+
+.toTop-arrow:focus {
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    h3{
+        font-size: 1.75rem;
+    }
+
+
+}

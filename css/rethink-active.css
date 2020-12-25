@@ -1,0 +1,117 @@
+.wrapper{
+    max-width: 800px;
+}
+
+h2{
+    text-align: center;
+}
+
+.video-container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.video iframe{
+    width:560px;
+    height:315px;
+}
+
+.video {
+    margin: 50px auto 0;
+    justify-content: center;
+}
+
+.activity-info{
+    margin: 50px 0;
+}
+
+.registration-info {
+    margin: 50px auto;
+}
+
+
+.list-container{
+    margin: 10px 0;
+    line-height: 2;
+}
+
+
+.accordion { 
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    margin: 10px ;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align:center;
+    font-size: 15px;
+    transition: 0.4s;
+    outline: none;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+    outline: none;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+}
+
+.fas{
+    margin: 0 10px;
+}
+
+.link-news{
+    color:#F24405;
+}
+
+.btn-container,.form-checkbox {
+    text-align: center;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.btn-signUp {
+    border: none;
+    width: 200px;
+    text-align: center;
+    color: #686868;
+    background: #A0D3F2;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: .2s;
+    font-weight: 700; 
+}
+
+.btn-signUp:hover{
+    color: #fff;
+    background-color: #F24405;
+}
+
+
+@media (max-width: 375px) {
+          
+  
+.video iframe{
+    width:280px;
+    height:157px;
+}
+
+
+.btn-signUp {
+    width: 100%;
+    margin-top: 50px;
+}
+
+h3{
+    text-align: center;
+}
+
+}
